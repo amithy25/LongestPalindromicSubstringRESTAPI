@@ -49,4 +49,4 @@ http://localhost:8080/getAllStrings
     }
 ]
 
-Swagger ui consoke for the REST-API can be accessed at http://localhost:8080/swagger-ui.html#/
+Swagger ui console for the REST-API can be accessed at http://localhost:8080/swagger-ui.html#/
