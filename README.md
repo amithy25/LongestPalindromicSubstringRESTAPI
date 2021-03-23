@@ -13,6 +13,40 @@ The REST API to the application is described below:
 # Request:
 GET /saveString
 
+http://localhost:8080/saveString
+request body: 
+{
+ "id": "babad"
+}
 
+# Response
+Input String saved
 
-#Response
+## Get Longest Palindromic substring:
+# Request:
+GET /getLongestPalidrome/{input_string}
+
+http://localhost:8080/input/babad
+
+# Response
+bab
+
+## Get list of all strings and their palindromic substrings:
+# Request:
+GET /getAllStrings
+
+http://localhost:8080/getAllStrings
+
+# Response
+[
+    {
+        "longestPalindrome": "bab",
+        "id": "babad"
+    },
+    {
+        "longestPalindrome": "baxabaxab",
+        "id": "abaxabaxabb"
+    }
+]
+
+Swagger ui consoke for the REST-API can be accessed at http://localhost:8080/swagger-ui.html#/
